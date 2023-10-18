@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/padding_horizontal"
+    android:paddingVertical="@dimen/padding_vertical">
+
+    <app.futured.donut.DonutProgressView
+        android:id="@+id/chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/chart_view_padding"
+        app:donut_bgLineColor="@color/secondary_green"
+        app:donut_gapWidth="0"
+        app:donut_gapAngle="270"
+        app:donut_strokeWidth="@dimen/chart_strokeWidth"/>
+
+</LinearLayout>

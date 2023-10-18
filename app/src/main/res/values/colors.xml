@@ -14,4 +14,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <!-- Donut Chart -->
+    <color name="blue_start">#014C75</color>
+    <color name="blue_middle">#007fc4</color>
+    <color name="blue_end">#43ADE6</color>
+
+    <color name="green_start">#71AE48</color>
+    <color name="green_middle">#9ed07c</color>
+    <color name="green_end">#B3C8A4</color>
+
 </resources>
