@@ -1,4 +1,4 @@
-package com.example.kiwisaverinvestment.ui.description.recyclerview
+package com.example.kiwisaverinvestment.ui.description.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,8 +8,6 @@ import com.example.kiwisaverinvestment.databinding.FundDetailsItemBinding
 class FundDetailsAdapter: RecyclerView.Adapter<FundDetailsAdapter.ViewHolder>() {
 
     private val fundDetails = ArrayList<String>()
-
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = FundDetailsItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)

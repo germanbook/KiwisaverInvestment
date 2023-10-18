@@ -16,12 +16,9 @@ class InvestorTypeDataSource(
             val jsonString = withContext(Dispatchers.IO) {
                 LoadJsonData.loadJSONFromAsset(application.applicationContext)
             }
-
-            val aa = jsonString
-
             val gson = Gson()
             val listType = object: TypeToken<List<Fund>>() {}.type
-            val funds: List<Fund> = gson.fromJson(aa, listType)
+            val funds: List<Fund> = gson.fromJson(jsonString, listType)
             Result.success(funds)
         } catch (e: Exception) {
             Result.failure(e)

@@ -8,7 +8,7 @@ data class Fund(
 )
 
 data class FundInvestmentMix(
-    val selectionTitle: String,
+    val sectionTitle: String,
     val percentage: Int,
     val assetType: String,
 )

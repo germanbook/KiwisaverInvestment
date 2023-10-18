@@ -17,9 +17,9 @@
     <dimen name="main_view_standard_margin">10dp</dimen>
 
     <!-- Text -->
-    <dimen name="title_text_size_large">18sp</dimen>
-    <dimen name="title_text_size_medium">14sp</dimen>
-    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="title_text_size_large">16sp</dimen>
+    <dimen name="title_text_size_medium">12sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
 
     <!-- Recyclerview Item-->
     <dimen name="recyclerview_height">280dp</dimen>
@@ -28,6 +28,6 @@
 
     <!-- Chart -->
     <dimen name="chart_view_height">100dp</dimen>
-    <dimen name="chart_strokeWidth">50dp</dimen>
+    <dimen name="chart_strokeWidth">30dp</dimen>
     <dimen name="chart_view_padding">6dp</dimen>
 </resources>

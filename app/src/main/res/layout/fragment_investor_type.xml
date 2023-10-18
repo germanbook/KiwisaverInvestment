@@ -40,9 +40,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerview_details"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/recyclerview_height"
             android:layout_marginTop="@dimen/main_view_standard_margin"
-            android:padding="@dimen/chart_view_padding"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/fund_details_item"/>
 
@@ -72,13 +71,33 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/growth_assets"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/main_view_standard_margin"
                 android:layout_weight="1"
                 android:layout_gravity="bottom"
                 android:text="@string/fund_growth_assets"
+                android:textSize="@dimen/title_text_size_medium"
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/growth_assets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_view_standard_margin"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:textSize="@dimen/title_text_size_medium"
+                android:textStyle="bold"
+                android:textColor="@color/green_start"
+                tools:text="20%"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_view_standard_margin"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:text="@string/fund_income_assets"
                 android:textSize="@dimen/title_text_size_medium"
                 android:textColor="@color/black" />
 
@@ -89,9 +108,10 @@
                 android:layout_marginTop="@dimen/main_view_standard_margin"
                 android:layout_weight="1"
                 android:layout_gravity="bottom"
-                android:text="@string/fund_income_assets"
                 android:textSize="@dimen/title_text_size_medium"
-                android:textColor="@color/black" />
+                android:textStyle="bold"
+                android:textColor="@color/blue_start"
+                tools:text="22%"/>
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
