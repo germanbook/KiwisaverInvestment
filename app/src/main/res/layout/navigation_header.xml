@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="@dimen/nav_menu_header_padding"
+    android:paddingVertical="@dimen/nav_menu_header_padding"
+    tools:layout_gravity="center"
+    tools:layout_width="@dimen/nav_menu_header_layout_width">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/nav_menu_header_avatar_width"
+        android:layout_height="@dimen/nav_menu_header_avatar_height"
+        android:contentDescription="@null"
+        android:src="@drawable/booster_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/nav_menu_header_title_margin"
+        android:layout_marginEnd="@dimen/nav_menu_header_title_margin"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="@dimen/nav_menu_header_title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="@string/nav_menu_header_title_text" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

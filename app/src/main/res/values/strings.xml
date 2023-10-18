@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Button -->
+    <string name="btn_welcome">Welcome</string>
+
+
+    <!-- Navigation Menu -->
+    <string name="nav_menu_header_title_text">making sense of money</string>
+    <string name="nav_menu_tab_home">Home</string>
+    <string name="nav_menu_tab_defensive">Defensive</string>
+    <string name="nav_menu_tab_conservative">Conservative</string>
+    <string name="nav_menu_tab_balanced">Balanced</string>
+    <string name="nav_menu_tab_balanced_growth">Balanced Growth</string>
+    <string name="nav_menu_tab_growth">Growth</string>
+    <string name="nav_menu_tab_aggressive_growth">Aggressive Growth</string>
+    <string name="nav_menu_drawer">Drawer</string>
+    <!-- Nav graph labels -->
+    <string name="nav_investor_type">Investor Type</string>
+    <string name="nav_welcome_to_home">Home</string>
+
+    <!-- Investor Type -->
+    <string name="fund_details_title">Investment objectives and strategy</string>
+    <string name="fund_mix_title">Target investment mix</string>
+    <string name="fund_growth_assets">Growth Assets</string>
+    <string name="fund_income_assets">Income Assets</string>
+
+
+    <!-- Chart -->
+    <string name="cash_and_cash_equivalents">Cash and cash equivalents</string>
+    <string name="listed_property">Listed property</string>
+    <string name="international_equities">International equities</string>
+    <string name="nz_fixed_interest">New Zealand fixed interest</string>
+    <string name="inter_fixed_interest">International fixed interest</string>
+    <string name="aus_equities">Australasian equities</string>
+
+
+
+    <string name="app_name">KiwisaverInvestment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

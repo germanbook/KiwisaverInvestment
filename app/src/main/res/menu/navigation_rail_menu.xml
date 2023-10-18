@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/tab_home"
+            android:enabled="true"
+            android:icon="@drawable/nav_menu_tab_home"
+            android:title="@string/nav_menu_tab_home" />
+        <item
+            android:id="@+id/tab_defensive"
+            android:enabled="true"
+            android:icon="@drawable/nav_menu_tab_defensive"
+            android:title="@string/nav_menu_tab_defensive" />
+        <item
+            android:id="@+id/tab_conservative"
+            android:enabled="true"
+            android:icon="@drawable/nav_menu_tab_conservative"
+            android:title="@string/nav_menu_tab_conservative" />
+        <item
+            android:id="@+id/tab_balanced"
+            android:enabled="true"
+            android:icon="@drawable/nav_menu_tab_balanced"
+            android:title="@string/nav_menu_tab_balanced" />
+        <item
+            android:id="@+id/tab_balanced_growth"
+            android:enabled="true"
+            android:icon="@drawable/nav_menu_tab_balanced_growth"
+            android:title="@string/nav_menu_tab_balanced_growth" />
+        <item
+            android:id="@+id/tab_growth"
+            android:enabled="true"
+            android:icon="@drawable/nav_menu_tab_growth"
+            android:title="@string/nav_menu_tab_growth" />
+        <item
+            android:id="@+id/tab_aggressive_growth"
+            android:enabled="true"
+            android:icon="@drawable/nav_menu_tap_aggressive_growth"
+            android:title="@string/nav_menu_tab_aggressive_growth" />
+    </group>
+
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Base.Theme.KiwisaverInvestment" parent="Theme.Material3.DayNight.NoActionBar" >
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/secondary_green</item>
+    </style>
+    <style name="Theme.KiwisaverInvestment" parent="Base.Theme.KiwisaverInvestment" />
+</resources>

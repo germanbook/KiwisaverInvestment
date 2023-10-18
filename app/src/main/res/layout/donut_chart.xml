@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/donut_chart">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="@string/cash_and_cash_equivalents"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                tools:text="Cash and cash equivalents" />
+
+            <TextView
+                android:id="@+id/property"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="@string/listed_property"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                tools:text="Listed property" />
+
+            <TextView
+                android:id="@+id/international"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:text="@string/international_equities"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                tools:text="International equities" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <app.futured.donut.DonutProgressView
+                android:id="@+id/donut_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/chart_view_padding"
+                app:donut_bgLineColor="@color/secondary_green"
+                app:donut_gapWidth="0"
+                app:donut_gapAngle="270"
+                app:donut_strokeWidth="@dimen/chart_strokeWidth"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nz_fixed_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|end"
+                android:text="@string/nz_fixed_interest"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                tools:text="New Zealand fixed interest" />
+
+            <TextView
+                android:id="@+id/inter_fixed_interest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|end"
+                android:text="@string/inter_fixed_interest"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                tools:text="International fixed interest" />
+
+            <TextView
+                android:id="@+id/aus_equities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|end"
+                android:text="@string/aus_equities"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/black"
+                tools:text="Australasian equities" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
