@@ -51,6 +51,6 @@
         android:layout_gravity="start"
         android:saveEnabled="false"
         app:headerLayout="@layout/navigation_header"
-        app:menu="@menu/navigation_rail_menu" />
+        app:menu="@menu/navigation_menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

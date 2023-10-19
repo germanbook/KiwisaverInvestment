@@ -12,6 +12,10 @@
         tools:layout="@layout/fragment_main_screen">
 
         <action
+            android:id="@+id/main_to_questionnaire"
+            app:destination="@id/questionnaire" />
+
+        <action
             android:id="@+id/main_to_investor_type"
             app:destination="@id/investor_type" />
         <argument
@@ -31,6 +35,28 @@
         <argument
             android:name="investor_type"
             app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/questionnaire"
+        android:name="com.example.kiwisaverinvestment.ui.questionnaire.QuestionnaireFragment"
+        android:label="@string/nav_questionnaire">
+
+        <action
+            android:id="@+id/to_questionnaire_result"
+            app:destination="@+id/questionnaire_result" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/questionnaire_result"
+        android:name="com.example.kiwisaverinvestment.ui.questionnaire.QuestionnaireResultFragment"
+        android:label="@string/nav_questionnaire_result">
+
+        <action
+            android:id="@+id/result_to_investor_type_details"
+            app:destination="@id/investor_type" />
+
     </fragment>
 
 </navigation>

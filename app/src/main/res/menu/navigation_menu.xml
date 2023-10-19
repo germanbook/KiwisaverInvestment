@@ -40,4 +40,32 @@
             android:title="@string/nav_menu_tab_aggressive_growth" />
     </group>
 
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/tab_questionnaire"
+            android:enabled="true"
+            android:icon="@drawable/nav_menu_tab_questionnaire"
+            android:title="@string/nav_menu_tab_questionnaire" >
+
+        <!--            <menu>
+                <item
+                    android:id="@+id/tab_questionnaire_submit"
+                    android:enabled="true"
+                    android:icon="@drawable/nav_menu_tab_submit"
+                    android:title="@string/nav_menu_tab_submit" />
+                <item
+                    android:id="@+id/tab_questionnaire_submitted"
+                    android:enabled="false"
+                    android:visible="false"
+                    android:icon="@drawable/nav_menu_tab_submitted"
+                    android:title="@string/nav_menu_tab_submitted" />
+            </menu>-->
+
+        </item>
+
+
+
+
+    </group>
+
 </menu>

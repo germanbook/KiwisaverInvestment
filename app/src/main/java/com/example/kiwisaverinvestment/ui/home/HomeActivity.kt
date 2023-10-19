@@ -106,6 +106,14 @@ class HomeActivity : AppCompatActivity(), DrawerLocker {
                     binding.root.close()
                     return@setNavigationItemSelectedListener true
                 }
+
+                R.id.tab_questionnaire -> {
+                    val action = MainScreenFragmentDirections.mainToQuestionnaire()
+                    navController.navigate(action)
+                    binding.root.close()
+                    return@setNavigationItemSelectedListener true
+                }
+
                 else -> {
                     //
                     return@setNavigationItemSelectedListener true

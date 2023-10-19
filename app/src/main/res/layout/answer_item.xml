@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/padding_horizontal"
+    android:paddingVertical="@dimen/padding_vertical"
+    android:layout_marginTop="@dimen/nav_menu_header_title_margin"
+    android:id="@+id/answer_item"
+    android:background="@color/secondary_green"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:paddingHorizontal="@dimen/main_view_padding"
+        tools:text="I am willing to take a moderate amount of risk to generate low to medium returns"
+        />
+
+    <TextView
+        android:id="@+id/mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/main_view_padding"
+        android:textStyle="bold"
+        tools:text="3"
+        />
+
+
+</LinearLayout>

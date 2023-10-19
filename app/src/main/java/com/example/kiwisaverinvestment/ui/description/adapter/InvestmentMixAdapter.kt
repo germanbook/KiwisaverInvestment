@@ -5,11 +5,9 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kiwisaverinvestment.R
-import com.example.kiwisaverinvestment.data.model.request.FundInvestmentMix
+import com.example.kiwisaverinvestment.data.model.FundInvestmentMix
 import com.example.kiwisaverinvestment.databinding.InvestmentMixItemBinding
-import org.koin.dsl.koinApplication
 import java.lang.Integer.min
-import android.graphics.Color
 
 class InvestmentMixAdapter: RecyclerView.Adapter<InvestmentMixAdapter.ViewHolder>() {
 

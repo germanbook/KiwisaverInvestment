@@ -2,6 +2,10 @@
 
     <!-- Button -->
     <string name="btn_welcome">Welcome</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_finish">Finish</string>
+    <string name="btn_show">Show</string>
+    <string name="btn_show_more">Show More</string>
 
 
     <!-- Navigation Menu -->
@@ -14,9 +18,16 @@
     <string name="nav_menu_tab_growth">Growth</string>
     <string name="nav_menu_tab_aggressive_growth">Aggressive Growth</string>
     <string name="nav_menu_drawer">Drawer</string>
+    <string name="nav_menu_tab_questionnaire">Questionnaire</string>
+    <string name="nav_menu_tab_submit">Submit</string>
+    <string name="nav_menu_tab_submitted">Submitted</string>
+
+
     <!-- Nav graph labels -->
     <string name="nav_investor_type">Investor Type</string>
     <string name="nav_welcome_to_home">Home</string>
+    <string name="nav_questionnaire">Questionnaire</string>
+    <string name="nav_questionnaire_result">Questionnaires Result</string>
 
     <!-- Investor Type -->
     <string name="fund_details_title">Investment objectives and strategy</string>
@@ -33,9 +44,12 @@
     <string name="inter_fixed_interest">International fixed interest</string>
     <string name="aus_equities">Australasian equities</string>
 
-
-
+    <!-- Questionnaire -->
+    <string name="questionnaire_score">Score</string>
     <string name="app_name">KiwisaverInvestment</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Questionnaire Result -->
+    <string name="total_score">Your total score:</string>
+    <string name="investor_type_title">Your investor type is:</string>
+
 </resources>
