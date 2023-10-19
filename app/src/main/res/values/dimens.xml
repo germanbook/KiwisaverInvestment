@@ -2,43 +2,44 @@
 <resources>
     <!-- Button -->
     <dimen name="btn_text_size">18sp</dimen>
-    <dimen name="btn_width">100dp</dimen>
-    <dimen name="btn_width_large">200dp</dimen>
+    <dimen name="btn_width">100sp</dimen>
+    <dimen name="btn_width_large">200sp</dimen>
 
     <!-- Navigation Menu -->
-    <dimen name="nav_menu_width">250dp</dimen>
-    <dimen name="nav_menu_header_padding">10dp</dimen>
-    <dimen name="nav_menu_header_layout_width">220dp</dimen>
-    <dimen name="nav_menu_header_avatar_width">200dp</dimen>
-    <dimen name="nav_menu_header_avatar_height">80dp</dimen>
-    <dimen name="nav_menu_header_title_margin">8dp</dimen>
-    <dimen name="nav_menu_header_title_text_size">16dp</dimen>
+    <dimen name="nav_menu_width">250sp</dimen>
+    <dimen name="nav_menu_header_padding">10sp</dimen>
+    <dimen name="nav_menu_header_layout_width">220sp</dimen>
+    <dimen name="nav_menu_header_avatar_width">200sp</dimen>
+    <dimen name="nav_menu_header_avatar_height">60sp</dimen>
+    <dimen name="nav_menu_header_title_margin">8sp</dimen>
+    <dimen name="nav_menu_header_title_text_size">16sp</dimen>
 
     <!-- Investor Type -->
-    <dimen name="main_view_padding">12dp</dimen>
-    <dimen name="main_view_standard_margin">10dp</dimen>
+    <dimen name="main_view_padding">12sp</dimen>
+    <dimen name="main_view_standard_margin">10sp</dimen>
 
     <!-- Text -->
     <dimen name="title_text_size_large">16sp</dimen>
     <dimen name="title_text_size_xlarge">24sp</dimen>
     <dimen name="title_text_size_medium">12sp</dimen>
     <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_padding_xxlarge">32sp</dimen>
 
     <!-- Recyclerview Item-->
-    <dimen name="recyclerview_height">280dp</dimen>
-    <dimen name="padding_horizontal">12dp</dimen>
-    <dimen name="padding_vertical">6dp</dimen>
+    <dimen name="recyclerview_height">280sp</dimen>
+    <dimen name="padding_horizontal">12sp</dimen>
+    <dimen name="padding_vertical">6sp</dimen>
 
     <!-- Chart -->
-    <dimen name="chart_view_height">100dp</dimen>
-    <dimen name="chart_strokeWidth">30dp</dimen>
-    <dimen name="chart_view_padding">6dp</dimen>
+    <dimen name="chart_view_height">100sp</dimen>
+    <dimen name="chart_strokeWidth">30sp</dimen>
+    <dimen name="chart_view_padding">6sp</dimen>
 
     <!-- Margin -->
-    <dimen name="textview_margin_small">16dp</dimen>
-    <dimen name="textview_margin_medium">20dp</dimen>
-    <dimen name="textview_margin_large">24dp</dimen>
-    <dimen name="textview_margin_xlarge">36dp</dimen>
-    <dimen name="textview_margin_super_large">48dp</dimen>
-    <dimen name="textview_margin_xxlarge">100dp</dimen>
+    <dimen name="textview_margin_small">16sp</dimen>
+    <dimen name="textview_margin_medium">20sp</dimen>
+    <dimen name="textview_margin_large">24sp</dimen>
+    <dimen name="textview_margin_xlarge">36sp</dimen>
+    <dimen name="textview_margin_super_large">48sp</dimen>
+    <dimen name="textview_margin_xxlarge">100sp</dimen>
 </resources>

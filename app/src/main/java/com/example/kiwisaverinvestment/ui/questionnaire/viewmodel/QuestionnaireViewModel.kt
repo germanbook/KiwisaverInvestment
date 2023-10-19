@@ -55,4 +55,8 @@ class QuestionnaireViewModel(
             }
         }
     }
+
+    fun getCurrentQuestionIndex(): Int {
+        return questionIndex
+    }
 }

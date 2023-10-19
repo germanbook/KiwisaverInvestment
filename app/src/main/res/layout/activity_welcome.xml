@@ -9,19 +9,41 @@
     <ImageView
         android:id="@+id/logo_booster"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/nav_menu_header_avatar_height"
+        android:layout_marginTop="@dimen/textview_margin_xxlarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/booster_logo"
+        android:scaleType="centerCrop"
         />
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_booster"
+        android:singleLine="true"
+        android:text="@string/nav_menu_header_title_text"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="@dimen/nav_menu_header_title_text_size"
+        android:textStyle="bold"
+
+        tools:text="@string/nav_menu_header_title_text" />
 
     <Button
         android:id="@+id/btn_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/textview_margin_large"
         android:text="@string/btn_welcome"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo_booster"
+        app:layout_constraintTop_toBottomOf="@id/header_title"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

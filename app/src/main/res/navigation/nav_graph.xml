@@ -12,6 +12,10 @@
         tools:layout="@layout/fragment_main_screen">
 
         <action
+            android:id="@+id/main_to_submit"
+            app:destination="@id/result_submit" />
+
+        <action
             android:id="@+id/main_to_questionnaire"
             app:destination="@id/questionnaire" />
 
@@ -56,6 +60,17 @@
         <action
             android:id="@+id/result_to_investor_type_details"
             app:destination="@id/investor_type" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/result_submit"
+        android:name="com.example.kiwisaverinvestment.ui.submit.SubmitFragment"
+        android:label="@string/nav_result_submit">
+
+        <action
+            android:id="@+id/submitted_to_home"
+            app:destination="@id/mainscreen" />
 
     </fragment>
 

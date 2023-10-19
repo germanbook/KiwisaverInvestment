@@ -4,9 +4,12 @@ import com.example.kiwisaverinvestment.data.repo.description.InvestorTypeDataSou
 import com.example.kiwisaverinvestment.data.repo.description.InvestorTypeRepository
 import com.example.kiwisaverinvestment.data.repo.questionnaire.QuestionnaireDataSource
 import com.example.kiwisaverinvestment.data.repo.questionnaire.QuestionnaireRepository
-import com.example.kiwisaverinvestment.ui.description.InvestorTypeViewModel
+import com.example.kiwisaverinvestment.data.repo.submit.SubmitDataSource
+import com.example.kiwisaverinvestment.data.repo.submit.SubmitRepository
+import com.example.kiwisaverinvestment.ui.description.viewmodel.InvestorTypeViewModel
 import com.example.kiwisaverinvestment.ui.questionnaire.viewmodel.QuestionnaireResultViewModel
 import com.example.kiwisaverinvestment.ui.questionnaire.viewmodel.QuestionnaireViewModel
+import com.example.kiwisaverinvestment.ui.submit.SubmitViewModel
 import org.koin.android.ext.koin.androidApplication
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -45,8 +48,23 @@ val questionnaireResultModule = module {
     }
 }
 
+val submitModule = module {
+    single {
+        SubmitDataSource()
+    }
+
+    single {
+        SubmitRepository(get())
+    }
+
+    viewModel {
+        SubmitViewModel(get())
+    }
+}
+
 val allKoinModules = listOf(
     investorTypeModule,
     questionnaireModule,
     questionnaireResultModule,
+    submitModule,
 )

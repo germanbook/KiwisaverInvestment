@@ -2,8 +2,11 @@ package com.example.kiwisaverinvestment.ui.home
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.window.OnBackInvokedDispatcher
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.view.GravityCompat
 import androidx.core.view.get
 import androidx.core.view.isVisible
@@ -13,6 +16,7 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.example.kiwisaverinvestment.R
@@ -114,6 +118,13 @@ class HomeActivity : AppCompatActivity(), DrawerLocker {
                     return@setNavigationItemSelectedListener true
                 }
 
+                R.id.tab_questionnaire_submit -> {
+                    val action = MainScreenFragmentDirections.mainToSubmit()
+                    navController.navigate(action)
+                    binding.root.close()
+                    return@setNavigationItemSelectedListener true
+                }
+
                 else -> {
                     //
                     return@setNavigationItemSelectedListener true
@@ -137,4 +148,17 @@ class HomeActivity : AppCompatActivity(), DrawerLocker {
             }
         }
     }
+
+//    override fun onBackPressed() {
+//        val alertDialog = AlertDialog.Builder(this)
+//            .setTitle(getString(R.string.dialog_title_quit))
+//            .setMessage(getString(R.string.dialog_title_quit_message))
+//            .setPositiveButton(getString(R.string.dialog_ok)) { dialog, _ ->
+//                dialog.dismiss()
+//                onDestroy()
+//                super.onBackPressed()
+//            }
+//            .create()
+//        alertDialog.show()
+//    }
 }

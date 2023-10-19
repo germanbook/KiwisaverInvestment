@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import app.futured.donut.DonutSection
 import com.example.kiwisaverinvestment.R
@@ -13,6 +14,7 @@ import com.example.kiwisaverinvestment.data.model.FundInvestmentMix
 import com.example.kiwisaverinvestment.databinding.FragmentInvestorTypeBinding
 import com.example.kiwisaverinvestment.ui.description.adapter.FundDetailsAdapter
 import com.example.kiwisaverinvestment.ui.description.adapter.InvestmentMixAdapter
+import com.example.kiwisaverinvestment.ui.description.viewmodel.InvestorTypeViewModel
 import com.example.kiwisaverinvestment.ui.home.DrawerLocker
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -35,12 +37,11 @@ class InvestorTypeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentInvestorTypeBinding.inflate(inflater, container, false)
-        (activity as DrawerLocker?)?.setDrawerLocked(true)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
+        (activity as DrawerLocker?)?.setDrawerLocked(true)
         viewModel.dataPreload()
         viewModel.investorTypeResult.observe(viewLifecycleOwner) { result ->
             result.success?.get(arg.investorType)?.apply {
@@ -64,6 +65,9 @@ class InvestorTypeFragment : Fragment() {
                 calculateAssets(this.fundInvestmentMix)
 
             }
+        }
+        binding.fabButton.setOnClickListener {
+            findNavController().navigate(R.id.mainscreen)
         }
     }
 

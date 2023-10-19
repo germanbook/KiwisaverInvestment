@@ -11,10 +11,11 @@
 
     <ImageView
         android:id="@+id/avatar"
-        android:layout_width="@dimen/nav_menu_header_avatar_width"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/nav_menu_header_avatar_height"
         android:contentDescription="@null"
         android:src="@drawable/booster_logo"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,6 +28,7 @@
         android:layout_marginEnd="@dimen/nav_menu_header_title_margin"
         android:gravity="center"
         android:singleLine="true"
+        android:text="@string/nav_menu_header_title_text"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="@dimen/nav_menu_header_title_text_size"
         android:textStyle="bold"

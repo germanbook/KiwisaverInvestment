@@ -23,6 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/primary_blue"
+            android:text="@string/questionnaire_question_index"
             android:textSize="@dimen/title_text_size_large"
             android:textStyle="bold"
             tools:text="Question"/>

@@ -4,16 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.mainscreen.MainScreenFragment">
+    tools:context=".ui.mainscreen.MainScreenFragment"
+    android:background="@color/primary_blue">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/lightbulb"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home fragment"
+        android:layout_height="@dimen/chart_view_height"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_marginTop="@dimen/textview_margin_xxlarge"
+        android:src="@drawable/main_screen_lightbulb"
+        android:scaleType="fitCenter"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/text_padding_xxlarge"
+        android:text="@string/main_screen_titles"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textview_margin_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lightbulb"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
