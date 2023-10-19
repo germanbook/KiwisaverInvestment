@@ -34,10 +34,7 @@ class AnswerAdapter: RecyclerView.Adapter<AnswerAdapter.ViewHolder>() {
             // get selected answer
             val selectedAnswer = answers[selectedPosition]
 
-            val aa = selectedAnswer
-
             answerClickListener?.onAnswerClick(selectedPosition)
-
 
         }
         holder.itemView.isSelected = selectedPosition == position

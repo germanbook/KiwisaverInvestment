@@ -28,6 +28,8 @@
     <string name="nav_welcome_to_home">Home</string>
     <string name="nav_questionnaire">Questionnaire</string>
     <string name="nav_questionnaire_result">Questionnaires Result</string>
+    <string name="nav_result_submit">Submit</string>
+    <string name="nav_result_submitted">Submitted</string>
 
     <!-- Investor Type -->
     <string name="fund_details_title">Investment objectives and strategy</string>
@@ -46,10 +48,32 @@
 
     <!-- Questionnaire -->
     <string name="questionnaire_score">Score</string>
+    <string name="questionnaire_question_index">Question</string>
     <string name="app_name">KiwisaverInvestment</string>
+    <string name="dialog_title_home">Back</string>
+    <string name="dialog_title_home_message">Back to home?</string>
+    <string name="dialog_title_quit">Quit</string>
+    <string name="dialog_title_quit_message">Do you want to quit?</string>
+
 
     <!-- Questionnaire Result -->
     <string name="total_score">Your total score:</string>
     <string name="investor_type_title">Your investor type is:</string>
+
+    <!-- Result Submit -->
+    <string name="submit_name">Name</string>
+    <string name="submit_email">Email</string>
+    <string name="submit_phone">Phone</string>
+    <string name="name_hint">name</string>
+    <string name="email_hint">email</string>
+    <string name="phone_hint">9/10 digit mobile number</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="submitted_message">Your application has been successfully submitted. Your data has been cleared, and you can now return to the home page.</string>
+    <string name="dialog_stop_title">Sorry</string>
+    <string name="dialog_stop_message">You have to finish questionnaire first.</string>
+
+    <!-- Main Screen -->
+    <string name="main_screen_titles">Discover your financial future with Booster Kiwisaver today!</string>
+
 
 </resources>

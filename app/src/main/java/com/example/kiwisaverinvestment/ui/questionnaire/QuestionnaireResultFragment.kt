@@ -7,8 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.kiwisaverinvestment.KiwisaverInvestmentApplication
+import com.example.kiwisaverinvestment.R
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import com.example.kiwisaverinvestment.databinding.FragmentQuestionnaireResultBinding
+import com.example.kiwisaverinvestment.ui.home.DrawerLocker
 import com.example.kiwisaverinvestment.ui.questionnaire.viewmodel.QuestionnaireResultViewModel
 
 class QuestionnaireResultFragment : Fragment() {
@@ -32,6 +34,8 @@ class QuestionnaireResultFragment : Fragment() {
         KiwisaverInvestmentApplication.user?.score?.apply {
             binding.resultScore.text = this.toString()
             binding.investorTypeResult.text = viewModel.getInvestorTypeByScore(this).investorTypeName
+
+            val navView = requireActivity()
         }
 
         binding.btnShowMore.setOnClickListener {

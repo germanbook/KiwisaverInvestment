@@ -17,8 +17,7 @@
         android:id="@+id/question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.3"
-        android:paddingHorizontal="@dimen/main_view_padding"
+        android:layout_weight="0.2"
         tools:text="I am willing to take a moderate amount of risk to generate low to medium returns"
         />
 
@@ -26,7 +25,7 @@
         android:id="@+id/mark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.8"
+        android:layout_weight="1.2"
         android:gravity="center"
         android:paddingHorizontal="@dimen/main_view_padding"
         android:textStyle="bold"
