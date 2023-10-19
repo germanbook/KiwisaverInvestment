@@ -1,7 +1,7 @@
 package com.example.kiwisaverinvestment.data.repo.description
 
 import android.app.Application
-import com.example.kiwisaverinvestment.data.model.request.Fund
+import com.example.kiwisaverinvestment.data.model.Fund
 import com.example.kiwisaverinvestment.common.LoadJsonData
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken

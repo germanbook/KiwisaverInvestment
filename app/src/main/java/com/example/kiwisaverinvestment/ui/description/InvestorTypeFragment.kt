@@ -9,13 +9,12 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import app.futured.donut.DonutSection
 import com.example.kiwisaverinvestment.R
-import com.example.kiwisaverinvestment.data.model.request.FundInvestmentMix
+import com.example.kiwisaverinvestment.data.model.FundInvestmentMix
 import com.example.kiwisaverinvestment.databinding.FragmentInvestorTypeBinding
 import com.example.kiwisaverinvestment.ui.description.adapter.FundDetailsAdapter
 import com.example.kiwisaverinvestment.ui.description.adapter.InvestmentMixAdapter
 import com.example.kiwisaverinvestment.ui.home.DrawerLocker
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import android.graphics.Color
 
 
 class InvestorTypeFragment : Fragment() {

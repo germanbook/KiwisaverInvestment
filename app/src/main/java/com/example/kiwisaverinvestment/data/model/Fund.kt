@@ -1,4 +1,4 @@
-package com.example.kiwisaverinvestment.data.model.request
+package com.example.kiwisaverinvestment.data.model
 
 data class Fund(
     val name: String,
