@@ -4,6 +4,7 @@
     <dimen name="btn_text_size">18sp</dimen>
     <dimen name="btn_width">100sp</dimen>
     <dimen name="btn_width_large">200sp</dimen>
+    <dimen name="btn_elevation">15dp</dimen>
 
     <!-- Navigation Menu -->
     <dimen name="nav_menu_width">250sp</dimen>
@@ -24,6 +25,7 @@
     <dimen name="title_text_size_medium">12sp</dimen>
     <dimen name="text_size_small">10sp</dimen>
     <dimen name="text_padding_xxlarge">32sp</dimen>
+    <dimen name="title_text_size_xxlarge">32sp</dimen>
 
     <!-- Recyclerview Item-->
     <dimen name="recyclerview_height">280sp</dimen>
@@ -42,4 +44,14 @@
     <dimen name="textview_margin_xlarge">36sp</dimen>
     <dimen name="textview_margin_super_large">48sp</dimen>
     <dimen name="textview_margin_xxlarge">100sp</dimen>
+
+    <!-- Questionnaire -->
+    <dimen name="questionnaire_answer_item_height">60dp</dimen>
+    <dimen name="textview_elevation">30dp</dimen>
+
+    <!-- Radius -->
+    <dimen name="button_corner_radius">8dp</dimen>
+    <dimen name="textview_corner_radius">14dp</dimen>
+    <dimen name="answer_item_corner_radius">24dp</dimen>
+    <dimen name="answer_item_shadow">4dp</dimen>
 </resources>

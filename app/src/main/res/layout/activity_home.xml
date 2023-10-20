@@ -21,6 +21,14 @@
                 android:background="@color/primary_blue"
                 android:elevation="4dp" >
 
+                <ImageView
+                    android:id="@+id/logo_toolbar"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/toolbar_logo"
+                    android:layout_gravity="start" />
+
                 <ImageButton
                     android:id="@+id/homeButton"
                     android:layout_width="wrap_content"

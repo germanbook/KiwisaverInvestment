@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/tertiary_yellow" />
+    <corners android:radius="@dimen/textview_corner_radius" />
+</shape>

@@ -57,8 +57,8 @@
 
 
     <!-- Questionnaire Result -->
-    <string name="total_score">Your total score:</string>
-    <string name="investor_type_title">Your investor type is:</string>
+    <string name="total_score">Your total score</string>
+    <string name="investor_type_title">Your investor type is</string>
 
     <!-- Result Submit -->
     <string name="submit_name">Name</string>
