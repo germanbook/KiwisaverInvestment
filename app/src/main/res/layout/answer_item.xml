@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.2"
         android:fontFamily="sans-serif-black"
+        android:textColor="@color/primary_blue"
         tools:text="I am willing to take a moderate amount of risk to generate low to medium returns"
         />
 
@@ -30,6 +31,7 @@
         android:gravity="center"
         android:paddingHorizontal="@dimen/main_view_padding"
         android:textStyle="bold"
+        android:textColor="@color/primary_blue"
         android:fontFamily="sans-serif-black"
         tools:text="3"
         />

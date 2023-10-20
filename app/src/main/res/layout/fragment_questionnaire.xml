@@ -103,6 +103,7 @@
             android:visibility="invisible"
             android:text="@string/btn_next"
             android:textSize="@dimen/btn_text_size"
+            android:textColor="@color/primary_blue"
             android:fontFamily="sans-serif-black"
             tools:visibility="visible"/>
 

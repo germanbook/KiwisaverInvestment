@@ -43,8 +43,8 @@
                 app:layout_constraintTop_toBottomOf="@id/fund_name"
                 android:layout_marginTop="@dimen/textview_margin_large"
                 android:text="@string/fund_details_title"
-                android:textSize="@dimen/title_text_size_medium"
-                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size_large"
+                android:textColor="@color/primary_blue"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-black"/>
 
@@ -69,8 +69,8 @@
                 app:layout_constraintTop_toBottomOf="@id/recyclerview_details"
                 android:layout_marginTop="@dimen/textview_margin_large"
                 android:text="@string/fund_mix_title"
-                android:textSize="@dimen/title_text_size_medium"
-                android:textColor="@color/black"
+                android:textSize="@dimen/title_text_size_large"
+                android:textColor="@color/primary_blue"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-black"/>
 
@@ -103,7 +103,7 @@
                     android:layout_gravity="bottom"
                     android:text="@string/fund_growth_assets"
                     android:textSize="@dimen/title_text_size_medium"
-                    android:textColor="@color/black"
+                    android:textColor="@color/primary_blue"
                     android:fontFamily="sans-serif-black"/>
                 <TextView
                     android:id="@+id/growth_assets"
@@ -126,7 +126,7 @@
                     android:layout_gravity="bottom"
                     android:text="@string/fund_income_assets"
                     android:textSize="@dimen/title_text_size_medium"
-                    android:textColor="@color/black"
+                    android:textColor="@color/primary_blue"
                     android:fontFamily="sans-serif-black"/>
 
                 <TextView
@@ -138,7 +138,7 @@
                     android:layout_gravity="bottom"
                     android:textSize="@dimen/title_text_size_medium"
                     android:textStyle="bold"
-                    android:textColor="@color/blue_start"
+                    android:textColor="@color/blue_end"
                     android:fontFamily="sans-serif-black"
                     tools:text="22%"/>
 

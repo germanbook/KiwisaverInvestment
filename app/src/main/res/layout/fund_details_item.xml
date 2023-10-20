@@ -18,6 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/title_text_size_medium"
+        android:textColor="@color/primary_blue"
         android:fontFamily="sans-serif-black"
         android:paddingHorizontal="@dimen/main_view_padding"
         tools:text="It aims to achieve returns (after fees but before tax) of ay least 1.5% above inflation over any two year period."

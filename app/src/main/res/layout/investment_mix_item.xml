@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_size_small"
-        android:textColor="@color/black"
+        android:textColor="@color/primary_blue"
         android:fontFamily="sans-serif-black"
         tools:text="New Zealand fixed interest" />
     <TextView
