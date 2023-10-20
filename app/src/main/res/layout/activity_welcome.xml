@@ -28,7 +28,7 @@
         app:layout_constraintTop_toBottomOf="@id/logo_booster"
         android:singleLine="true"
         android:text="@string/nav_menu_header_title_text"
-        android:textColor="?android:attr/textColorPrimary"
+        android:textColor="@color/primary_blue"
         android:textSize="@dimen/nav_menu_header_title_text_size"
         android:textStyle="bold"
         android:fontFamily="sans-serif-black"
