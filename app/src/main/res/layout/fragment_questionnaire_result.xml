@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tertiary_yellow"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.questionnaire.QuestionnaireResultFragment">
 
@@ -11,63 +12,70 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/textview_margin_super_large"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:padding="@dimen/main_view_padding"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:text="@string/total_score"
-        android:textSize="@dimen/title_text_size_xlarge"
         android:textColor="@color/primary_blue"
-        android:textStyle="bold" />
+        android:textSize="@dimen/title_text_size_xxlarge"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/result_score"
         android:layout_width="@dimen/btn_width"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/textview_margin_xlarge"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:padding="@dimen/main_view_padding"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/score_title"
-        android:background="@color/white_dark"
-        android:textSize="@dimen/title_text_size_xlarge"
+        android:background="@drawable/textview_light_rounded_corner"
+        android:textSize="@dimen/title_text_size_xxlarge"
         android:textColor="@color/primary_blue"
         android:textStyle="bold"
+        android:elevation="@dimen/textview_elevation"
         tools:text="20" />
 
     <TextView
         android:id="@+id/investor_type_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/textview_margin_xxlarge"
+        android:layout_marginTop="@dimen/textview_margin_xlarge"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:padding="@dimen/main_view_padding"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/result_score"
         android:text="@string/investor_type_title"
-        android:textSize="@dimen/title_text_size_xlarge"
+        android:textSize="@dimen/title_text_size_xxlarge"
         android:textColor="@color/primary_blue"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/investor_type_result"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/textview_margin_super_large"
+        android:layout_marginTop="@dimen/textview_margin_large"
+        android:background="@drawable/textview_light_rounded_corner"
+        android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:padding="@dimen/main_view_padding"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/investor_type_title"
-        android:textSize="@dimen/title_text_size_xlarge"
+        android:textSize="@dimen/title_text_size_xxlarge"
         android:textColor="@color/primary_blue"
         android:textStyle="bold"
+        android:elevation="@dimen/textview_elevation"
         tools:text="Balanced Growth" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_show_more"
         android:layout_width="@dimen/btn_width_large"
         android:layout_height="wrap_content"
@@ -75,8 +83,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/investor_type_result"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/button_dark_style"
         android:text="@string/btn_show_more"
         android:textSize="@dimen/btn_text_size"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
         tools:visibility="visible"/>
 
 

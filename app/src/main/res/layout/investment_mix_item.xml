@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_size_small"
         android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
         tools:text="New Zealand fixed interest" />
     <TextView
         android:id="@+id/percentage"
@@ -19,6 +20,7 @@
         android:textSize="@dimen/title_text_size_medium"
         android:textColor="@color/primary_blue"
         android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
         tools:text="22%" />
 
 </LinearLayout>

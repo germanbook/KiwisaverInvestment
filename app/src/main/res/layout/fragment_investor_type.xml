@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tertiary_yellow"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ScrollView
@@ -29,6 +30,7 @@
                 android:textSize="@dimen/title_text_size_large"
                 android:textColor="@color/primary_blue"
                 android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
                 tools:text="Capital Guaranteed Fund" />
 
 
@@ -39,11 +41,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/fund_name"
-                android:layout_marginTop="@dimen/textview_margin_super_large"
+                android:layout_marginTop="@dimen/textview_margin_large"
                 android:text="@string/fund_details_title"
                 android:textSize="@dimen/title_text_size_medium"
                 android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerview_details"
@@ -54,6 +57,7 @@
                 app:layout_constraintTop_toBottomOf="@id/fund_details_title"
                 android:layout_marginTop="@dimen/main_view_standard_margin"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:elevation="@dimen/textview_elevation"
                 tools:listitem="@layout/fund_details_item"/>
 
             <TextView
@@ -63,11 +67,12 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/recyclerview_details"
-                android:layout_marginTop="@dimen/textview_margin_super_large"
+                android:layout_marginTop="@dimen/textview_margin_large"
                 android:text="@string/fund_mix_title"
                 android:textSize="@dimen/title_text_size_medium"
                 android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"/>
 
             <include layout="@layout/donut_chart"
                 android:id="@+id/donut_chart"
@@ -98,7 +103,8 @@
                     android:layout_gravity="bottom"
                     android:text="@string/fund_growth_assets"
                     android:textSize="@dimen/title_text_size_medium"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"/>
                 <TextView
                     android:id="@+id/growth_assets"
                     android:layout_width="0dp"
@@ -109,6 +115,7 @@
                     android:textSize="@dimen/title_text_size_medium"
                     android:textStyle="bold"
                     android:textColor="@color/green_start"
+                    android:fontFamily="sans-serif-black"
                     tools:text="20%"/>
 
                 <TextView
@@ -119,7 +126,8 @@
                     android:layout_gravity="bottom"
                     android:text="@string/fund_income_assets"
                     android:textSize="@dimen/title_text_size_medium"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-black"/>
 
                 <TextView
                     android:id="@+id/income_assets"
@@ -131,6 +139,7 @@
                     android:textSize="@dimen/title_text_size_medium"
                     android:textStyle="bold"
                     android:textColor="@color/blue_start"
+                    android:fontFamily="sans-serif-black"
                     tools:text="22%"/>
 
 

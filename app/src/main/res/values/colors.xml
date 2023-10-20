@@ -14,7 +14,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="white_dark">#CFE6AF</color>
+    <color name="white_dark">#A9ACA6</color>
 
 
     <!-- Donut Chart -->
@@ -25,5 +25,15 @@
     <color name="green_start">#71AE48</color>
     <color name="green_middle">#9ed07c</color>
     <color name="green_end">#B3C8A4</color>
+
+    <!-- Button -->
+    <color name="button_light_normal_color">@color/white</color>
+    <color name="button_light_pressed_color">@color/white_dark</color>
+    <color name="button_dark_normal_color">@color/primary_blue</color>
+    <color name="button_dark_pressed_color">@color/white_dark</color>
+
+    <!-- Questionnaire Answer -->
+    <color name="questionnaire_answer_item_bg">#548BC34A</color>
+    <color name="textview_light_bg">#F4C818</color>
 
 </resources>

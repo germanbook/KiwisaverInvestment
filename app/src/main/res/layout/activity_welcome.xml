@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tertiary_yellow"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.welcome.WelcomeActivity">
 
@@ -30,16 +31,19 @@
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="@dimen/nav_menu_header_title_text_size"
         android:textStyle="bold"
-
+        android:fontFamily="sans-serif-black"
         tools:text="@string/nav_menu_header_title_text" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_welcome"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/btn_width_large"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/textview_margin_large"
+        android:background="@drawable/button_dark_style"
         android:text="@string/btn_welcome"
         android:textSize="@dimen/btn_text_size"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_title"
         app:layout_constraintEnd_toEndOf="parent"
