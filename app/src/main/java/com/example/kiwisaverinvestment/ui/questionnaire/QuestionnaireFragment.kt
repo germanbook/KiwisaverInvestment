@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.addCallback
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
@@ -86,21 +87,18 @@ class QuestionnaireFragment : Fragment(), AnswerAdapter.OnAnswerClickListener {
             }
         }
 
-        val callback = object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                val alertDialog = AlertDialog.Builder(requireContext())
-                    .setTitle(getString(R.string.dialog_title_home))
-                    .setMessage(getString(R.string.dialog_title_home_message))
-                    .setPositiveButton(getString(R.string.dialog_ok)) { dialog, _ ->
-                        dialog.dismiss()
-                        (activity as DrawerLocker?)?.setDrawerLocked(false)
-                        findNavController().popBackStack()
-                    }
-                    .create()
-                alertDialog.show()
-            }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
+            val alertDialog = AlertDialog.Builder(requireContext())
+                .setTitle(getString(R.string.dialog_title_home))
+                .setMessage(getString(R.string.dialog_title_home_message))
+                .setPositiveButton(getString(R.string.dialog_ok)) { dialog, _ ->
+                    dialog.dismiss()
+                    (activity as DrawerLocker?)?.setDrawerLocked(false)
+                    findNavController().popBackStack()
+                }
+                .create()
+            alertDialog.show()
         }
-        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
     }
 
     private fun updateQuestion() {

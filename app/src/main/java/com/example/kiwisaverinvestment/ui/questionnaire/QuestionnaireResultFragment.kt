@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.addCallback
 import androidx.navigation.fragment.findNavController
 import com.example.kiwisaverinvestment.KiwisaverInvestmentApplication
 import com.example.kiwisaverinvestment.R
@@ -43,6 +44,10 @@ class QuestionnaireResultFragment : Fragment() {
                 val action = QuestionnaireResultFragmentDirections.resultToInvestorTypeDetails(this)
                 findNavController().navigate(action)
             }
+        }
+
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
+            // Disable the back button in this page
         }
     }
 
