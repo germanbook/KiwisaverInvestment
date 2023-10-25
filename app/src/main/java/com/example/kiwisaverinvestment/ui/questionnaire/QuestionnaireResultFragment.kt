@@ -1,18 +1,16 @@
 package com.example.kiwisaverinvestment.ui.questionnaire
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.addCallback
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.kiwisaverinvestment.KiwisaverInvestmentApplication
-import com.example.kiwisaverinvestment.R
-import org.koin.androidx.viewmodel.ext.android.viewModel
 import com.example.kiwisaverinvestment.databinding.FragmentQuestionnaireResultBinding
-import com.example.kiwisaverinvestment.ui.home.DrawerLocker
 import com.example.kiwisaverinvestment.ui.questionnaire.viewmodel.QuestionnaireResultViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class QuestionnaireResultFragment : Fragment() {
 
