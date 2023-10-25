@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kiwisaverinvestment.data.model.Answer
-import com.example.kiwisaverinvestment.data.model.Question
 import com.example.kiwisaverinvestment.databinding.AnswerItemBinding
 
 class AnswerAdapter: RecyclerView.Adapter<AnswerAdapter.ViewHolder>() {

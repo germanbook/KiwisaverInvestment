@@ -1,13 +1,12 @@
 package com.example.kiwisaverinvestment.ui.questionnaire
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.OnBackPressedCallback
 import androidx.activity.addCallback
 import androidx.appcompat.app.AlertDialog
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.example.kiwisaverinvestment.KiwisaverInvestmentApplication
@@ -18,7 +17,6 @@ import com.example.kiwisaverinvestment.databinding.FragmentQuestionnaireBinding
 import com.example.kiwisaverinvestment.ui.home.DrawerLocker
 import com.example.kiwisaverinvestment.ui.questionnaire.adapter.AnswerAdapter
 import com.example.kiwisaverinvestment.ui.questionnaire.viewmodel.QuestionnaireViewModel
-import com.example.kiwisaverinvestment.ui.submit.SubmitFragmentDirections
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

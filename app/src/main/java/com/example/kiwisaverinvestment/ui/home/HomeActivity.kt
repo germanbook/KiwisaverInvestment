@@ -1,34 +1,17 @@
 package com.example.kiwisaverinvestment.ui.home
 
 import android.os.Bundle
-import android.view.MenuItem
-import android.window.OnBackInvokedDispatcher
-import androidx.appcompat.app.AlertDialog
-import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContentProviderCompat.requireContext
-import androidx.core.view.GravityCompat
-import androidx.core.view.get
 import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.FragmentActivity
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.setupWithNavController
 import com.example.kiwisaverinvestment.R
 import com.example.kiwisaverinvestment.common.Constants
 import com.example.kiwisaverinvestment.databinding.ActivityHomeBinding
-import com.example.kiwisaverinvestment.databinding.NavigationHeaderBinding
-import com.example.kiwisaverinvestment.ui.description.InvestorTypeFragment
-import com.example.kiwisaverinvestment.ui.description.InvestorTypeFragmentDirections
-import com.example.kiwisaverinvestment.ui.mainscreen.MainScreenFragment
 import com.example.kiwisaverinvestment.ui.mainscreen.MainScreenFragmentDirections
 import com.google.android.material.navigation.NavigationView
-import com.google.android.material.navigationrail.NavigationRailView
 
 class HomeActivity : AppCompatActivity(), DrawerLocker {
 

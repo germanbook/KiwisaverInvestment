@@ -34,6 +34,17 @@
         android:fontFamily="sans-serif-black"
         tools:text="@string/nav_menu_header_title_text" />
 
+    <ImageView
+        android:id="@+id/bird_egg"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/welcome_logo_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_title"
+        android:layout_marginTop="@dimen/textview_margin_xlarge"
+        android:src="@drawable/welcome_screen_bird_and_single_egg"
+        android:scaleType="fitCenter"/>
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_welcome"
         android:layout_width="@dimen/btn_width_large"
@@ -45,7 +56,7 @@
         android:textColor="@color/white"
         android:fontFamily="sans-serif-black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header_title"
+        app:layout_constraintTop_toBottomOf="@id/bird_egg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />

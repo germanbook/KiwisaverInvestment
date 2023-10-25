@@ -2,14 +2,7 @@ package com.example.kiwisaverinvestment.ui.welcome
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
-import com.example.kiwisaverinvestment.R
-import com.example.kiwisaverinvestment.databinding.ActivityHomeBinding
 import com.example.kiwisaverinvestment.databinding.ActivityWelcomeBinding
 import com.example.kiwisaverinvestment.ui.home.HomeActivity
 
