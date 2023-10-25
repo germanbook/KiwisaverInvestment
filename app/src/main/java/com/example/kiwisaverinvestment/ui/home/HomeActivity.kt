@@ -150,17 +150,4 @@ class HomeActivity : AppCompatActivity(), DrawerLocker {
             }
         }
     }
-
-//    override fun onBackPressed() {
-//        val alertDialog = AlertDialog.Builder(this)
-//            .setTitle(getString(R.string.dialog_title_quit))
-//            .setMessage(getString(R.string.dialog_title_quit_message))
-//            .setPositiveButton(getString(R.string.dialog_ok)) { dialog, _ ->
-//                dialog.dismiss()
-//                onDestroy()
-//                super.onBackPressed()
-//            }
-//            .create()
-//        alertDialog.show()
-//    }
 }
