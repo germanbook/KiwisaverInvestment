@@ -27,15 +27,6 @@ class HomeActivity : AppCompatActivity(), DrawerLocker {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.content_screen) as NavHostFragment
         navController = navHostFragment.navController
         supportActionBar?.title = ""
-//        navController?.addOnDestinationChangedListener { _, dest, _ ->
-//            if (!dest.label.isNullOrBlank()) {
-//                supportActionBar?.title = dest.label
-//
-//            } else {
-//                supportActionBar?.title = "Home"
-//            }
-//        }
-
 
         if (binding.navigationMenu is NavigationView) {
             val navigationView = binding.navigationMenu as NavigationView

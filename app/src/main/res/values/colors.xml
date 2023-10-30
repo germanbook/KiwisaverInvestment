@@ -36,4 +36,7 @@
     <color name="questionnaire_answer_item_bg">#548BC34A</color>
     <color name="textview_light_bg">#F4C818</color>
 
+    <!-- ProgressBar -->
+    <color name="progressbar_background">#2F202220</color>
+
 </resources>
