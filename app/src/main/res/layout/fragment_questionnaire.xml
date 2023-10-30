@@ -1,116 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/primary_blue"
-    >
-    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/gray_background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/main_view_standard_margin"
-        android:layout_marginLeft="@dimen/main_view_standard_margin"
-        android:layout_marginRight="@dimen/main_view_standard_margin"
-        android:layout_marginBottom="@dimen/main_view_standard_margin"
-        android:padding="@dimen/main_view_padding"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        tools:context=".ui.questionnaire.QuestionnaireFragment">
+        android:background="@color/progressbar_background" />
 
-        <LinearLayout
-            android:id="@+id/title"
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/main_view_standard_margin"
+            android:layout_marginLeft="@dimen/main_view_standard_margin"
+            android:layout_marginRight="@dimen/main_view_standard_margin"
+            android:layout_marginBottom="@dimen/main_view_standard_margin"
+            android:padding="@dimen/main_view_padding"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context=".ui.questionnaire.QuestionnaireFragment">
+
+            <LinearLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/questionnaire_question_index"
+                    android:textSize="@dimen/title_text_size_large"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    tools:text="Question"/>
+                <TextView
+                    android:id="@+id/question_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/nav_menu_header_title_margin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_text_size_large"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    tools:text="1" />
+
+
+            </LinearLayout>
+
             <TextView
+                android:id="@+id/question"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:text="@string/questionnaire_question_index"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                android:layout_marginTop="@dimen/nav_menu_header_title_margin"
                 android:textSize="@dimen/title_text_size_large"
                 android:textStyle="bold"
+                android:textColor="@color/white"
                 android:fontFamily="sans-serif-black"
                 tools:text="Question"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/question"
+                android:layout_marginTop="@dimen/main_view_standard_margin"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/answer_item" />
+
             <TextView
-                android:id="@+id/question_index"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/nav_menu_header_title_margin"
-                android:textColor="@color/white"
-                android:textSize="@dimen/title_text_size_large"
-                android:textStyle="bold"
+                android:id="@+id/selected_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recyclerview_question"
+                app:layout_constraintBottom_toTopOf="@id/btn_next"
+                android:layout_margin="@dimen/main_view_standard_margin"
+                android:background="@color/tertiary_yellow"
+                android:paddingHorizontal="@dimen/main_view_padding"
+                android:enabled="true"
+                android:visibility="invisible"
                 android:fontFamily="sans-serif-black"
-                tools:text="1" />
+                tools:text="I am willing to take a moderate amount of risk to generate low to medium returns"
+                tools:visibility="visible"/>
 
-
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/question"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/title"
-            android:layout_marginTop="@dimen/nav_menu_header_title_margin"
-            android:textSize="@dimen/title_text_size_large"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:fontFamily="sans-serif-black"
-            tools:text="Question"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview_question"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/question"
-            android:layout_marginTop="@dimen/main_view_standard_margin"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/answer_item" />
-
-        <TextView
-            android:id="@+id/selected_question"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/recyclerview_question"
-            app:layout_constraintBottom_toTopOf="@id/btn_next"
-            android:layout_margin="@dimen/main_view_standard_margin"
-            android:background="@color/tertiary_yellow"
-            android:paddingHorizontal="@dimen/main_view_padding"
-            android:enabled="true"
-            android:visibility="invisible"
-            android:fontFamily="sans-serif-black"
-            tools:text="I am willing to take a moderate amount of risk to generate low to medium returns"
-            tools:visibility="visible"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_next"
-            android:layout_width="@dimen/btn_width"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_light_style"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/selected_question"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_margin="@dimen/main_view_standard_margin"
-            android:visibility="invisible"
-            android:text="@string/btn_next"
-            android:textSize="@dimen/btn_text_size"
-            android:textColor="@color/primary_blue"
-            android:fontFamily="sans-serif-black"
-            tools:visibility="visible"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_next"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_light_style"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/selected_question"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_margin="@dimen/main_view_standard_margin"
+                android:visibility="invisible"
+                android:text="@string/btn_next"
+                android:textSize="@dimen/btn_text_size"
+                android:textColor="@color/primary_blue"
+                android:fontFamily="sans-serif-black"
+                tools:visibility="visible"/>
 
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-</ScrollView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 

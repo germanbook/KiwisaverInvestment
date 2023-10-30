@@ -47,6 +47,10 @@ class QuestionnaireFragment : Fragment(), AnswerAdapter.OnAnswerClickListener {
 
         viewModel.dataPreload()
         viewModel.question.observe(viewLifecycleOwner) { result ->
+
+            binding.progressbar.visibility = View.INVISIBLE
+            binding.grayBackground.visibility = View.INVISIBLE
+
             _question = result
             binding.questionIndex.text = viewModel.getCurrentQuestionIndex().toString()
             binding.question.text = result.questionText
@@ -86,7 +90,7 @@ class QuestionnaireFragment : Fragment(), AnswerAdapter.OnAnswerClickListener {
         }
 
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
-            val alertDialog = AlertDialog.Builder(requireContext())
+            val alertDialog = AlertDialog.Builder(requireContext(), R.style.CustomAlertDialogTheme)
                 .setTitle(getString(R.string.dialog_title_home))
                 .setMessage(getString(R.string.dialog_title_home_message))
                 .setPositiveButton(getString(R.string.dialog_ok)) { dialog, _ ->

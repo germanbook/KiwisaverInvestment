@@ -3,6 +3,7 @@ package com.example.kiwisaverinvestment.data.repo.questionnaire
 import com.example.kiwisaverinvestment.data.model.Answer
 import com.example.kiwisaverinvestment.data.model.Question
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 
 class QuestionnaireDataSource {
@@ -10,6 +11,7 @@ class QuestionnaireDataSource {
     // Normally data fetched from API, made it suspend function
     suspend fun listQuestions(): Result<List<Question>> {
         return try {
+            delay(1000)
             val questions = withContext(Dispatchers.IO) {
                 listOf(
                     Question(
