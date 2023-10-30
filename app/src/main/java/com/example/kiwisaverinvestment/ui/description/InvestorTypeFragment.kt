@@ -46,6 +46,8 @@ class InvestorTypeFragment : Fragment() {
         viewModel.dataPreload()
         viewModel.investorTypeResult.observe(viewLifecycleOwner) { result ->
             result.success?.get(arg.investorType)?.apply {
+                binding.progressbar.visibility = View.INVISIBLE
+                binding.grayBackground.visibility = View.INVISIBLE
                 binding.fundName.text = this.fundName
                 binding.recyclerviewDetails.adapter = FundDetailsAdapter().apply {
                     fundDetailsAdapter = this
