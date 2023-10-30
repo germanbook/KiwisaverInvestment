@@ -6,6 +6,7 @@ import com.example.kiwisaverinvestment.common.LoadJsonData
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
 
 class InvestorTypeDataSource(
@@ -13,6 +14,7 @@ class InvestorTypeDataSource(
 ) {
     suspend fun listInvestorType(): Result<List<Fund>> {
         return try {
+            delay(1000)
             val jsonString = withContext(Dispatchers.IO) {
                 LoadJsonData.loadJSONFromAsset(application.applicationContext)
             }

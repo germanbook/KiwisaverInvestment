@@ -37,6 +37,7 @@ class SubmitFragment : Fragment() {
             showStopDialog()
         }
 
+        binding.grayBackground.visibility = View.INVISIBLE
         binding.progressbar.visibility = View.INVISIBLE
 
         binding.nameInput.addTextChangedListener { validateName(it.toString()) }
@@ -121,7 +122,7 @@ class SubmitFragment : Fragment() {
     }
 
     private fun showSuccessDialog() {
-        val alertDialog = AlertDialog.Builder(requireContext())
+        val alertDialog = AlertDialog.Builder(requireContext(), R.style.CustomAlertDialogTheme)
             .setTitle(getString(R.string.nav_result_submitted))
             .setMessage(getString(R.string.submitted_message))
             .setPositiveButton(getString(R.string.dialog_ok)) { dialog, _ ->
@@ -143,7 +144,7 @@ class SubmitFragment : Fragment() {
     }
 
     private fun showStopDialog() {
-        val alertDialog = AlertDialog.Builder(requireContext())
+        val alertDialog = AlertDialog.Builder(requireContext(), R.style.CustomAlertDialogTheme)
             .setTitle(getString(R.string.dialog_stop_title))
             .setMessage(getString(R.string.dialog_stop_message))
             .setPositiveButton(getString(R.string.dialog_ok)) { dialog, _ ->

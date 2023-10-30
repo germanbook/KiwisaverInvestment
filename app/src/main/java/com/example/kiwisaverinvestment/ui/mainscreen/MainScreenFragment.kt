@@ -30,7 +30,7 @@ class MainScreenFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
-            val alertDialog = AlertDialog.Builder(requireContext())
+            val alertDialog = AlertDialog.Builder(requireContext(), R.style.CustomAlertDialogTheme)
                 .setTitle(getString(R.string.dialog_title_quit))
                 .setMessage(getString(R.string.dialog_title_quit_message))
                 .setPositiveButton(getString(R.string.dialog_ok)) { dialog, _ ->
